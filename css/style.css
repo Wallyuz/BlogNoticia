@@ -1,0 +1,84 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Paleta de cores */
+:root{
+    --cor-principal : #6c5fff;
+    --cor-01: #f9f9f9;
+    --cor-02: #dfdfdf;
+    --cor-03: #8E8E8E;
+    --cor-04: #595959;
+    --cor-05: #232323;
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: var(--cor-02);
+    color: var(--cor-05);
+}
+header{
+    background-color: var(--cor-05);
+    color: var(--cor-02);
+
+    /* position: fixed; */
+    width: 100%;
+    /* z-index: 100%; */
+    /* top: 0; */
+    padding: 19.2px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span{
+    color: var(--cor-principal);
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    padding: .8rem 1rem;
+    letter-spacing: .1rem;
+    border: solid 1px yellow; /* TESTE */
+    transition: 0.5s;
+
+}
+
+nav a:hover{
+    color: var(--cor-principal);
+
+}
+
+footer{
+    background-color: var(--cor-05);
+    color: var(--cor-02);
+    padding: 1rem 5rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 60%;
+
+}
