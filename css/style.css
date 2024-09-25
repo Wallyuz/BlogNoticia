@@ -33,7 +33,6 @@ body {
 header {
     background-color: var(--cor-05);
     color: var(--cor-01);
-
     position: fixed;
     width: 100%;
     top: 0;
@@ -62,6 +61,10 @@ nav a {
     padding: 0.5rem 1rem;
     letter-spacing: 0.1rem;
     transition: 0.5s;
+}
+
+.menu-responsivel{
+    display: none;
 }
 
 nav a:hover {
@@ -139,4 +142,36 @@ footer {
     opacity: 0.6;
 }
 
+/* media queries */
 
+/* XS Extra Small - celular retrato (portrait) */
+@media (max-width: 576px) {
+    .menu-responsivel{
+    display: block;
+    }
+    .menu{
+        display: none;
+    }
+    /* teste */
+    header{
+        padding: 2rem;
+    }
+
+    article {
+        height: auto;
+        margin: 1rem;
+        /* overflow: hidden; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto {
+        overflow: hidden;
+        margin-right: 0rem;
+    }
+    
+    .foto img {
+        width: 100%;
+    }
+}
