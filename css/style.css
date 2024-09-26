@@ -2,6 +2,8 @@
 /* Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
 
+
+
 :root {
     /* Paleta de cores */
     --cor-principal: #6c5fff;
@@ -67,6 +69,10 @@ nav a {
     display: none;
 }
 
+.menu-responsivel i{
+    font-size: 3rem;
+}
+
 nav a:hover {
     color: var(--cor-principal);
 }
@@ -121,6 +127,8 @@ article:hover {
     height: 100%;
 }
 
+
+
 .leia-mais {
     font-weight: 700;
     color: var(--cor-principal);
@@ -174,4 +182,67 @@ footer {
     .foto img {
         width: 100%;
     }
+
+    .texto{
+       max-height: 10rem;
+        overflow: hidden;               
+    }
+}
+
+
+/* SM Small - celular retrato (landscape) */
+@media (min-width: 576px) {
+
+     .menu-responsivel{
+    display: block;
+    }
+    .menu{
+        display: none;
+    }
+    /* teste */
+    header{
+        padding: 1rem 2rem;
+    }
+
+    article {
+        height: auto;
+        margin: 1rem;
+        /* overflow: hidden; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto {
+        overflow: hidden;
+        margin-right: 0rem;
+    }
+    
+    .foto img {
+        width: 100%;
+    }
+
+    .texto{
+       max-height: 10rem;
+        overflow: hidden;               
+    }
+    header{
+        background-color: firebrick;
+    }
+}
+
+/*M Medium - tablet (landscape) */
+@media (min-width: 768px) {
+    header{
+        padding: 1rem 3rem;
+    }
+
+   article {
+       height: auto;
+       margin: 3rem;
+       /* overflow: hidden; */
+   }
+   header{
+       background-color:blueviolet;
+   }
 }
