@@ -226,9 +226,7 @@ footer {
        max-height: 10rem;
         overflow: hidden;               
     }
-    header{
-        background-color: firebrick;
-    }
+    
 }
 
 /*M Medium - tablet (landscape) */
@@ -237,12 +235,52 @@ footer {
         padding: 1rem 3rem;
     }
 
-   article {
+    .menu-responsivel{
+        display:none;
+        }
+
+        .menu{
+            display: block;
+        }
+
+    article {
        height: auto;
        margin: 3rem;
        /* overflow: hidden; */
    }
-   header{
-       background-color:blueviolet;
-   }
+ 
+}
+
+/*Notebook */
+@media (min-width: 992px) {
+   
+
+    header{
+        padding: 1rem 5rem;
+    }
+
+    article {
+        height: 16rem;
+        margin: 1rem 5rem;
+        display: grid;
+        grid-template-columns: 16rem auto;
+    }
+
+    .foto {
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    
+    .foto img {
+        height: 100%;
+    }
+
+    .texto{
+       max-height: 10rem;
+        overflow: hidden;               
+    }
+}
+
+@media (min-width: 992px) {
+  
 }
